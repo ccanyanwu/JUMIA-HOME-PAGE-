@@ -12,9 +12,6 @@
  a {
   text-decoration :none ;
 }
-a:hover{
-  background :#D3822D;
-}
 
 /*disposable gif */
 #gif1{
@@ -144,4 +141,212 @@ div.search-input .input-field{
 div.search-input .input-field:focus{
   border :0;
   outline :none ;
+} 
+img{width: 100%;
+  padding: .8rem .8rem;
+}
+p{
+  font-weight: 400;
+  font-size: .875rem;
+  padding: 8px 8px 4px 8px;
+  color: #757579;
+ 
+}
+.primary-background{
+  background-color: #fff;
+  margin: 1rem 2rem 1rem 2rem;
+  border-radius: 4px;
+  overflow: hidden;
+  display: block;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+
+}
+.heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+  background-color: #ffa500;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 3rem;
+}
+.heading-light{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+  background-color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 3rem;
+}
+.heading .primary-heading{
+  font-size: 1.25rem;
+  white-space: nowrap;
+  font-weight: 500;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+.right{font-weight: 200;}
+
+.heading a{
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.school-cards{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  
+ 
+}
+.school-cards .card{
+  background-color: #ddd;
+  border-radius: 4px;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  border-radius: 5px;   
+  width: 100%;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+
+}
+.school-cards .card:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.school-cards .card .discount {
+  content: '';
+  position: absolute;
+  min-width: 2.5rem;
+  height: 1.5rem;
+  border-radius: 2px;
+  right: .5rem;
+  top: -9.85rem;
+  padding: 0 4px 0 4px;
+  background-color: #feefde;
+  color: #f58b16;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.school-cards .card:hover{
+  background: 0 0 12px 0 rgba(0,0,0,0.12);
+}
+.prime-images{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 2rem;
+}
+
+.prime-images img,
+.nokia-showcase img,
+.prime-images-mobile img{
+  width: 100%;
+  margin: .8rem .8rem;
+}
+.prime-images-mobile{display: none;}
+
+.top-brands{
+  background: #fff;
+}
+.first-row{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 2rem;
+}
+.first-row img:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+/*Media Queries*/
+
+
+@media screen and (max-width: 1024px) {
+  .school-cards{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 1rem;
+      text-align: center;
+  }
+  .prime-images img{
+      display: none;
+  }
+  .prime-images-mobile{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 2rem;
+      margin: 0;
+  }
+  .first-row{
+      margin: 0;
+  }
+ 
+}
+
+
+@media screen and (max-width: 768px) {
+  
+  .primary-background{
+      max-width: 100%;
+      margin: 1rem 0 0 0;
+  }
+  .heading .primary-heading h2{
+      font-size: 1rem;
+      font-weight: 400;
+  }
+  .heading  .right{
+      font-weight: 400;
+      white-space: wrap;
+      display: none;
+  }
+  
+  .heading a{
+      color: #000;
+      font-size: .8rem;
+      font-weight: 500;
+  }
+  .school-cards{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 1rem;
+      text-align: center;
+  }
+  .prime-images img{
+      display: none;
+  }
+  .prime-images-mobile{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 2rem;
+      margin: 0;
+  }
+  .nokia-showcase,
+  .top-brands{
+      margin: 1rem 0 1rem 0;
+  }
+  .first-row{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 2rem;
+  }
+
 } 
