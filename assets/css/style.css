@@ -12,6 +12,9 @@
  a {
   text-decoration :none ;
 }
+a:hover{
+  background :#D3822D;
+}
 
 /*disposable gif */
 #gif1{
@@ -42,6 +45,7 @@ header{
 header #toggler i,
 header > i{
   font-size :1.5rem ;
+  z-index: 1;
 }
 header .logo img{
   width :60%;
@@ -49,10 +53,13 @@ header .logo img{
 /*mobile side bar */
 nav {
   background :#fff;
+  display :none ;
   height :100vh ;
   left :0;
   overflow-y: scroll ;
+  padding-bottom: 6rem ;
   position: fixed ;
+  transition :transform 3s ease;
   top: 0;
   width :87vw;
   z-index: 3 ;
@@ -72,6 +79,7 @@ nav > .nav-close > button~img{
   width :7rem ;
 }
 nav .jumia-account {
+  align-items: center ;
   border-top :0.5px solid #c4c4c4 ;
   display: flex ;
   font-size :0.75rem ;
@@ -97,4 +105,15 @@ nav .jumia-account_item i ~ p{font-weight: 300 ;}
 #our-services span {
   font-weight: 300;  
   text-decoration: underline ;
+}
+div.sell{
+  border-top: 0.5px solid #c4c4c4 ;
+  line-height: 2.5rem;
+  padding-left: 1rem ;
+  padding-top :1rem ;
+}
+div.sell a{
+  color :#111;
+  display :block ;
+  font-weight: 300 ;
 }
