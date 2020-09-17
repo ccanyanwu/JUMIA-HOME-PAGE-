@@ -58,6 +58,7 @@ nav {
   z-index: 3 ;
 }
 nav > a{display :flex ;}
+nav  span {color :#111}
 nav > .nav-close{padding: 0 0 0.75rem 1rem ;}
 nav > .nav-close > button{
   background: transparent;
@@ -83,10 +84,13 @@ nav .jumia-account p{
   color :#E88411;
 }
 nav .jumia-account_item{
-  color :#111;
+  color :#111 ;
+  display :grid ;
+  grid-template-columns :minmax(3rem, 15%) 2fr ;
   padding: 0 1rem 1.5rem ;}
 nav .jumia-account_item i{
   font-size: 1.5rem;
+  justify-self: center ;
   padding-right: 1rem ;
 } 
 nav .jumia-account_item i ~ p{font-weight: 300 ;} 
