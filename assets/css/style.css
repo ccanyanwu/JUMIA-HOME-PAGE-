@@ -1,3 +1,73 @@
+/*Google imported font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/*basic css reset */
 *{
-    m
+    box-sizing :border-box ;
+    font-family: 'Roboto', sans-serif;
+    margin :0 ;
+    padding :0 ;
+    position: relative ;
+}
+ *a {
+  text-decoration :none ;
+}
+
+/*disposable gif */
+#gif1{
+  position: relative ;
+  text-align :center ;
+}
+#gif1 button {
+  background :#f4f4f4;
+  border :0;
+  border-radius :50%;
+  display :block ;
+  height :2rem ;
+  outline :none ;
+  position :absolute ;
+  right :-6.5rem  ;
+  top :1rem ;
+  width :2rem;
+}
+
+/*******************
+header & nav section
+*******************/
+header{
+  display :grid ;
+  grid-template-columns :1fr 7fr 1fr 1fr;
+  padding :1.5rem ;
+}
+header #toggler i,
+header > i{
+  font-size :1.5rem ;
+}
+header .logo img{
+  width :60%;
+}
+/*mobile side bar */
+nav {
+  background :#fff;
+  height :100vh ;
+  left :0;
+  position: fixed ;
+  top: 0;
+  width :80vw;
+  z-index: 3 ;
+}
+nav > .nav-close{
+  border-bottom :0.5px solid #c4c4c4;
+  padding: 0 0 0.75rem 1rem ;
+}
+nav > .nav-close > button{
+  background: transparent;
+  border: 0;
+  font-size :2.75rem ;
+  font-weight :300 ;
+  outline :none ;
+}
+nav > .nav-close > button~img{
+  padding-left: 0.75rem ;
+  width :7rem ;
 }
