@@ -18,20 +18,24 @@ a:hover{
 
 /*disposable gif */
 #gif1{
+  max-width :70%;
   position: relative ;
   text-align :center ;
 }
+#gif1 img{
+  width: 130%;
+}
 #gif1 button {
-  background :#f4f4f4;
+  background :#f2f2f2;
   border :0;
   border-radius :50%;
   display :block ;
-  height :2rem ;
+  height :1.5rem ;
   outline :none ;
   position :absolute ;
-  right :-6.5rem  ;
+  right :-5.5rem  ;
   top :1rem ;
-  width :2rem;
+  width :1.5rem;
 }
 
 /*******************
@@ -117,3 +121,27 @@ div.sell a{
   display :block ;
   font-weight: 300 ;
 }
+
+/**********
+search input 
+**********/
+div.search-input{
+  border :1px solid #c4c4c4 ;
+  border-radius :1.25rem;
+  height:2.25rem ;
+  margin :1rem ;
+}
+div.search-input > i{
+  padding-top :0.5725rem;
+  text-align :center ;
+  width :13%;
+}
+div.search-input .input-field{
+  border :0;
+  height :90%;
+  width :80%;
+} 
+div.search-input .input-field:focus{
+  border :0;
+  outline :none ;
+} 

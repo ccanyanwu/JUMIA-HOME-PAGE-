@@ -1,7 +1,7 @@
-/*/add an event listener to clear out the disposable gif
+//add an event listener to clear out the disposable gif
 document.querySelector('#gif1 button').addEventListener('click', (e) => {
   e.target.parentElement.style.display = 'none';
-});*/
+});
 
 //for the mobile navbar toggle 
 const nav = document.querySelector('nav');
