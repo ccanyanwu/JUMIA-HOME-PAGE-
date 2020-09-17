@@ -129,7 +129,7 @@ div.search-input{
   border :1px solid #c4c4c4 ;
   border-radius :1.25rem;
   height:2.25rem ;
-  margin :1rem ;
+  margin :0 1rem ;
 }
 div.search-input > i{
   padding-top :0.5725rem;
