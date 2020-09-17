@@ -9,7 +9,7 @@
     padding :0 ;
     position: relative ;
 }
- *a {
+ a {
   text-decoration :none ;
 }
 
@@ -51,15 +51,14 @@ nav {
   background :#fff;
   height :100vh ;
   left :0;
+  overflow-y: scroll ;
   position: fixed ;
   top: 0;
-  width :80vw;
+  width :87vw;
   z-index: 3 ;
 }
-nav > .nav-close{
-  border-bottom :0.5px solid #c4c4c4;
-  padding: 0 0 0.75rem 1rem ;
-}
+nav > a{display :flex ;}
+nav > .nav-close{padding: 0 0 0.75rem 1rem ;}
 nav > .nav-close > button{
   background: transparent;
   border: 0;
@@ -70,4 +69,28 @@ nav > .nav-close > button{
 nav > .nav-close > button~img{
   padding-left: 0.75rem ;
   width :7rem ;
+}
+nav .jumia-account {
+  border-top :0.5px solid #c4c4c4 ;
+  display: flex ;
+  font-size :0.75rem ;
+  font-weight: 700 ;
+  flex-direction :row ;
+  justify-content: space-between ;
+  padding :1rem 1rem 2rem ;
+}
+nav .jumia-account p{
+  color :#E88411;
+}
+nav .jumia-account_item{
+  color :#111;
+  padding: 0 1rem 1.5rem ;}
+nav .jumia-account_item i{
+  font-size: 1.5rem;
+  padding-right: 1rem ;
+} 
+nav .jumia-account_item i ~ p{font-weight: 300 ;} 
+#our-services span {
+  font-weight: 300;  
+  text-decoration: underline ;
 }
