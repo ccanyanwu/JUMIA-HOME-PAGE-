@@ -144,4 +144,65 @@ div.search-input .input-field{
 div.search-input .input-field:focus{
   border :0;
   outline :none ;
-} 
+}
+
+/*************
+slider portion
+*************/
+section.slider {
+  margin-top: 1rem ;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  height: 10rem ;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.slides::-webkit-scrollbar {
+  width: 0.625rem;
+  height: 2px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 1rem;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  flex-shrink: 0;
+  width: 100%;
+  margin-right: 0.5rem ;
+  transfom-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slides > div > img {
+  border-radius:0.25rem ;
+  height :10rem;
+  width: 95%;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+}
+
+/**********
+ cash back 
+**********/
+section.cash-back{
+  display :grid ;
+  grid-template-columns :repeat(4, 1fr );
+  place-items :center ;
+}
