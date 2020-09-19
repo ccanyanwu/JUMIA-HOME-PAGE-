@@ -216,11 +216,43 @@ section.cash-back div {
   align-self :start ;
   text-align :center ;
 }
-section.cash-back > div > img{
-  width :3rem ;
-}
+section.cash-back > div > img{width :3rem ;}
 section.cash-back > div > p{
   font-size: 0.7rem ;
   font-weight: 300 ;
   padding-top :0.4rem ;
+}
+/*********
+Top selling 
+**********/
+section#top{
+  padding: 1rem ;
+}
+section#top > p{font-weight: 300 ;}
+section#top > article.items{
+  display: flex; 
+  flex-wrap :nowrap ;
+  margin-top :1rem ;
+  overflow-x:scroll ;
+  padding-bottom: 1rem;
+}
+section#top > article.items > div{
+  justify-self: flex-start ;
+  margin-right: 1rem ;
+  position :relative;
+}
+section#top > article.items > div > img{width :9rem;}
+section#top > article.items > div > img ~ p{
+  font-size :0.9rem ;
+  font-weight: 300 ;
+}
+section#top > article.items > div :nth-child(3){padding-top: 0.5rem ;}
+section#top > article.items > div > div.discount{
+  background :#feefde;
+  color :#f58b16;
+  font-weight: 300 ;
+  padding: 0.25rem ;
+  position :absolute ;
+  right :6% ;
+  top :6% ;
 }
