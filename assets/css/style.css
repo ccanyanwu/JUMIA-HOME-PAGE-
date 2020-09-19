@@ -202,7 +202,25 @@ section.slider {
  cash back 
 **********/
 section.cash-back{
+  border-radius :0.2rem;
+  box-shadow:  5px 5px 8px #e4e4e4, -5px -5px 8px #e4e4e4 ;
   display :grid ;
+  grid-column-gap:0.7rem; 
+  grid-row-gap :1.5rem ;
   grid-template-columns :repeat(4, 1fr );
+  margin: 0.5rem;
+  padding: 0.8rem 0.5rem ;
   place-items :center ;
+}
+section.cash-back div {
+  align-self :start ;
+  text-align :center ;
+}
+section.cash-back > div > img{
+  width :3rem ;
+}
+section.cash-back > div > p{
+  font-size: 0.7rem ;
+  font-weight: 300 ;
+  padding-top :0.4rem ;
 }
