@@ -10,10 +10,11 @@
     position: relative ;
 }
  a {
-   cursor: pointer;
   text-decoration :none ;
 }
-
+a:hover{
+  background :#D3822D;
+}
 
 /*disposable gif */
 #gif1{
@@ -25,7 +26,7 @@
   width: 130%;
 }
 #gif1 button {
-  background :#fff;
+  background :#f2f2f2;
   border :0;
   border-radius :50%;
   display :block ;
@@ -255,201 +256,3 @@ section#top > article.items > div > div.discount{
   right :6% ;
   top :6% ;
 }
-
-/************
-MEDIA QUERIES
-*************/
-@media all and (min-width:48rem){
-  #gif1{max-width :75%;}
-  #gif1 button {
-    right :-10.5rem  ;
-    top :2rem ;
-  }
-
-  header{padding :1rem 0 ;}
-  header #toggler{justify-self: center;}
-  header .logo img{width :22%;}
-  header .logo ~ i{font-size: 1.5rem;}
-
-  
-  nav .jumia-account_item{grid-template-columns :minmax(auto, 5%) 2fr ;}
-  
-  .slides {height: 20rem ;}
-  .slides > div > img {height :20rem;}
-
-  section.cash-back div {
-    align-self :start ;
-    text-align :center ;
-  }
-  section.cash-back > div > img{width :6rem ;}
-  
-  section#top > article.items > div > img{width :18rem;}
-  section#top > article.items > div > img ~ p{
-    font-size :0.9rem ;
-    font-weight: 300 ;
-  }
-  section#top > article.items > div :nth-child(3){padding-top: 0.5rem ;}
-  section#top > article.items > div > div.discount{
-    background :#feefde;
-    color :#f58b16;
-    font-weight: 300 ;
-    padding: 0.25rem ;
-    position :absolute ;
-    right :6% ;
-    top :6% ;
-  }
-}
-
-
-/****SECTION TWO START HERE****/
-.section2 {
-  background-color: #ebebeb;
-  color: #fff;
-}
-/**** CONTAINER RED HEADER START HERE****/
-.container .row {
-  background-color: #fff;
-  margin-right: 0px;
-  margin-left: 0px;
-  border-radius: 7px 7px 7px 7px;
-}
-.container .row .inscription {
-  background-color: red;
-  color: #fff;
-  width: 100%;
-  border-radius: 7px 7px 0px 0px;
-}
-.container .row .inscription h5 {
-  font-size: 18px;
-  padding: 20px 10px 5px;
-}
-.container .row .inscription h5 span {
-  border-left: 2px solid #fff;
-}
-.container .row .inscription a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-/**** CONTAINER RED HEADER END HERE****/
-
-/***** ROW ONE CONTAINER BODY START HERE*****/
-.row .col-lg-2 a {
-  text-decoration: none;
-}
-.row .col-lg-2 .card {
-  margin: 0.5rem 0rem;
-  color: #000;
-  border: none;
-}
-.row .col-lg-2 .card:hover {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-}
-.row .col-lg-2 .card img {
-  margin-bottom: -0.85rem;
-  position: relative;
-}
-.row .col-lg-2 .card span {
-  position: absolute;
-  right: 0.25rem;
-  top: 0.25rem;
-  background-color: #feefde;
-  color: #f68b1e;
-  padding: 2px 3px;
-  font-size: 14px;
-  font-weight: bold;
-  /* opacity: 0.6; */
-}
-.row .col-lg-2 .card .card-body .card-title {
-  margin-bottom: 0.5rem;
-  font-size: 0.75rem;
-  color: rgb(75, 75, 75);
-}
-.row .col-lg-2 .card .card-body .price {
-  margin: -0.3rem 0rem;
-  font-size: 1.05rem;
-  font-weight: bold;
-  color: rgb(49, 49, 49);
-}
-.row .col-lg-2 .card .card-body small {
-  text-decoration: line-through;
-  font-size: 0.8rem;
-}
-/***** ROW ONE CONTAINER BODY END HERE*****/
-
-/***** ROW TWO START HERE *****/
-.line2, .line3, .line5, .line6 {
-  background-color: #fff;
-  color: #000;
-  border-radius: 7px 7px 7px 7px;
-}
-.container .line2 .inscription2 {
-  width: 100%;
-}
-.container .line2 .inscription2 h5 {
-  font-size: 22px;
-  font-weight: bold;
-  padding: 10px 0px 0px 20px;
-}
-.line2 .row {
-  padding: 0rem 0.8rem;
-}
-.line2 .row .col-lg-2 .card .card-body .card-text {
-  font-size: 14px;
-  color: rgb(50, 50, 50);
-}
-/***** ROW TWO END HERE *****/
-
-/**** ROW FOUR START HERE****/
-.container .row .inscription2 {
-  background-color: orange;
-  color: #000;
-  width: 100%;
-  border-radius: 7px 7px 0px 0px;
-}
-.container .row .inscription2 h5 {
-  font-size: 18px;
-  padding: 20px 10px 5px;
-}
-.container .row .inscription2 h5 span {
-  border-left: 2px solid #000;
-}
-.container .row .inscription2 a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-}
-/**** ROW FOUR END HERE****/
-
-
-
-@media (max-width: 991.98px) {
-  /*** ROW ONE OF SECTION ONE RESPONSIVE ***/
-  .container {
-      min-width: 97%;
-  }
-  .container .row .inscription h5 {
-      flex-direction: column;
-  }
-  .container .row .inscription h5 span {
-      border-left: none;
-      margin-top: 0.5rem;
-  }
-  .card img{
-      height: 35vh;
-  }
-  .card-body {
-      text-align: center;
-  }
-  small {
-      display: none;
-  }
-  .pl-3, .px-3 {
-      padding-left: 0rem!important;
-  }
-  .ml-3, .mx-3 {
-      margin-left: 0rem!important;
-  }
-}
-
-/****SECTION TWO END HERE****/
